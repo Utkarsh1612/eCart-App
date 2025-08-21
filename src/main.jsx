@@ -4,9 +4,9 @@ import App from "./App.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Products from "./pages/products.jsx";
 import Cart from "./pages/Cart.jsx";
 import ProductContext from "./contexts/ProductContext.js";
+import Products from "./pages/products.jsx";
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
