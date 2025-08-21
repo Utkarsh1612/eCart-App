@@ -6,15 +6,13 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Cart from "./pages/Cart.jsx";
 import ProductContext from "./contexts/ProductContext.js";
-import Products from "./pages/products.jsx";
+import Products from "./pages/Products.jsx";
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
   { path: "/products", element: <Products /> },
   { path: "/cart", element: <Cart /> },
 ]);
-
-
 
 const ProductContextProvider = ({children}) => {
   const [productQuantity, setProductQuantity] = useState({});
